@@ -1,0 +1,184 @@
+.HeroSection {
+  position: relative;
+  height: calc(100vh - 75px);
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.HeroSection .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+  box-shadow: inset 0 0 0 1500px rgba(31, 30, 30, 0.5);
+}
+
+.HeroSection-content {
+  position: absolute;
+  top: 35%;
+  width: 500px;
+  left: 5%;
+  color: white;
+}
+
+.HeroSection-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.HeroSection-content button {
+  position: relative;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.05rem;
+  border-radius: 5px;
+  color: white;
+  background: transparent;
+  border: 2px solid red;
+  transition: 0.2s all ease;
+}
+
+.HeroSection-content button:hover {
+  background: red;
+}
+
+.Search-Car {
+  position: absolute;
+  top: calc(100% - 100px);
+  left: 5%;
+  width: 90%;
+  background: white;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (min-width: 1600px) {
+  .HeroSection-content {
+    width: 600px;
+    left: 12.5%;
+  }
+  .HeroSection-content h1 {
+    font-size: 4rem;
+  }
+  .Search-Car {
+    left: 12.5%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 850px) {
+  .HeroSection {
+    margin-bottom: 480px;
+  }
+  .HeroSection-content {
+    top: 30%;
+  }
+  .Search-Car {
+    height: 500px;
+    width: 70%;
+    left: 15%;
+    z-index: 200000;
+    padding: 0px 0px 20px 0px;
+  }
+  .Search-Car .Search-box{
+    flex-direction: column;
+  }
+  .Search-img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .Search-img h1 {
+    font-size: 1.7rem;
+  }
+  .HeroSection .Details {
+    width: 100%;
+  }
+  .HeroSection .From input,
+  .HeroSection .To input,
+  .HeroSection .journey-date input,
+  .HeroSection .journey-time input,
+  .HeroSection .submit input,
+  .HeroSection .type input {
+    width: 100%;
+  }
+  .HeroSection .From,
+  .HeroSection .To,
+  .HeroSection .journey-date,
+  .HeroSection .journey-time,
+  .HeroSection .submit,
+  .HeroSection .type {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px !important;
+  }
+  .Details .w-100 {
+    flex-direction: column;
+    margin-top: 0% !important;
+  }
+  .journey-date {
+    position: relative;
+  }
+  .journey-date .react-calendar {
+    width: 100%;
+    top: 100%;
+  }
+  .type-dropdown {
+    width: 100%;
+    top: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .HeroSection-content {
+    width: 400px;
+    left: 15%;
+  }
+  .HeroSection-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .HeroSection {
+    height: 75vh;
+  }
+  .HeroSection-content {
+    left: 5%;
+  }
+  .HeroSection-content h1 {
+    font-size: 2.9rem;
+  }
+  .Search-Car {
+    width: 90%;
+    left: 5%;
+    top: 80%;
+    z-index: 200000;
+  }
+}
+
+@media (max-width: 450px) {
+  .HeroSection-content {
+    width: 350px;
+  }
+  .HeroSection-content h1 {
+    font-size: 2.5rem;
+  }
+  .HeroSection .From,
+  .HeroSection .To,
+  .HeroSection .journey-date,
+  .HeroSection .journey-time,
+  .HeroSection .submit,
+  .HeroSection .type {
+    width: 95%;
+  }
+}
+
+@media (max-width: 380px) {
+  .HeroSection-content {
+    width: 330px;
+  }
+}

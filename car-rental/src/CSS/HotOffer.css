@@ -1,0 +1,129 @@
+.Hot-Offers {
+  margin-top: 60px;
+}
+
+
+.Hot-Offers .main-heading {
+  font-weight: bold;
+  font-size: 3.1rem;
+  text-transform: uppercase;
+}
+
+.Offer-cards {
+  display: grid;
+  grid-template-columns: repeat(3, calc(33.333333333333336% - 20px));
+  justify-content: center;
+  grid-gap: 30px;
+  margin-top: 30px;
+}
+
+.offer-card {
+  width: 100%;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  padding: 20px 20px 25px 20px;
+  height: 380px;
+}
+
+.offer-img {
+  width: 78%;
+  margin: auto;
+  height: 48%;
+}
+
+.offer-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.offer-card h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.offer-card .price {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.offer-card .highlight {
+  color: red;
+}
+
+.car-details {
+  margin-top: 20px;
+}
+
+.car-details div {
+  width: auto;
+}
+
+.car-details i {
+  font-size: 1rem;
+  color: red;
+}
+
+.car-details p {
+  font-size: 14px;
+  color: rgb(153, 148, 148);
+}
+
+.offer-btns {
+  margin-top: 30px;
+  text-align: center;
+  background: #020202 none repeat scroll 0 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  transition: all 0.4s ease 0s;
+  border-radius: 3px;
+}
+
+.offer-btns:after {
+  position: absolute;
+  content: "";
+  width: 66%;
+  height: 100%;
+  right: -36px;
+  z-index: -1;
+  transform: skewX(40deg);
+  transition: all 0.4s ease 0s;
+}
+
+.offer-btns button {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 40px;
+  color: white;
+  background: transparent;
+}
+
+.offer-btns:after,
+.offer-btns:hover {
+  background: #ec3323 none repeat scroll 0 0;
+}
+
+@media (max-width: 1000px) {
+  .Hot-Offers .Offer-cards {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (max-width: 750px) {
+  .Hot-Offers .Offer-cards {
+    grid-template-columns: repeat(1, 85%);
+  }
+  .Hot-Offers .main-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .Hot-Offers .Offer-cards {
+    grid-template-columns: repeat(1, 100%);
+  }
+}

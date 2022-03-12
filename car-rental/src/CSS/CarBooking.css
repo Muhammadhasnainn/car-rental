@@ -1,0 +1,221 @@
+.carbook-header {
+  width: 100%;
+  background: url("http://gauto-react.themescare.com/static/media/breadcromb.6f2331c2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 1500px rgba(0, 0, 0, 0.9);
+}
+
+.carbook-header h1 {
+  font-weight: bold;
+  font-size: 3.3rem;
+  color: white;
+}
+
+.CarBooking .car-img {
+  width: 45%;
+  height: auto;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.CarBooking .car-text {
+  width: 50%;
+  position: relative;
+}
+
+.CarBooking .car-text .price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.car-text .details-para {
+  color: #7c8a97;
+  margin-top: 20px;
+}
+
+.fa-star {
+  color: gold;
+  font-size: 0.95rem;
+  margin-left: 1px;
+}
+
+.rating {
+  margin-left: 10px;
+}
+
+.rating p {
+  font-size: 14px;
+  color: #7c8a97;
+  margin-left: 10px;
+}
+
+.CarBooking .car-features {
+  display: grid;
+  grid-template-columns: repeat(3, calc(30% - 10px));
+  grid-gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.CarBooking .car-features i {
+  color: red;
+}
+
+.CarBooking .car-features p {
+  margin-left: 10px;
+  color: #7c8a97;
+}
+
+/* FORM */
+.Booking-payment {
+  margin-top: 60px;
+}
+
+.Booking-form {
+  width: 68%;
+}
+
+.Booking-payment h1 {
+  font-size: 1.9rem;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 5px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  justify-content: space-between;
+  grid-gap: 15px;
+  margin-top: 20px;
+}
+
+.form-grid input,
+.Booking-form textarea {
+  outline: none;
+  border: 2px solid gainsboro;
+  padding: 6px 15px;
+  font-size: 1.03rem;
+  border-radius: 3px;
+}
+
+.Booking-form textarea {
+  height: 100px;
+}
+
+.Payment-method {
+  width: 28%;
+}
+
+.payment-option {
+  margin-top: 10px;
+}
+
+.payment-option input {
+  height: 20px;
+  width: 20px;
+}
+
+.payment-option:first-child {
+  margin-top: 20px;
+}
+
+.payment-option p {
+  margin-left: 10px;
+}
+
+.payment-text {
+  color: #7c8a97;
+  margin-top: 5px;
+}
+
+.Payment-method button {
+  outline: none;
+  border: 2px solid red;
+  color: red;
+  display: block;
+  background: transparent;
+  padding: 7px 15px;
+  margin-left: auto;
+  margin-top: 10px;
+  border-radius: 3px;
+  transition: 0.3s all ease;
+}
+
+.Payment-method button:hover {
+  background: red;
+  color: white;
+}
+
+@media (max-width: 1060px) {
+  .Booking-form {
+    width: 61%;
+  }
+  .Payment-method {
+    width: 34%;
+  }
+}
+
+@media (max-width: 980px) {
+  .CarDetails {
+    flex-direction: column;
+    margin-top: 0% !important;
+  }
+  .CarBooking .car-img {
+    height: 50vh;
+    width: 100%;
+  }
+  .CarBooking .car-text {
+    width: 100%;
+  }
+  .Booking-payment {
+    flex-direction: column;
+  }
+  .Booking-form {
+    width: 100%;
+  }
+  .Payment-method {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .form-grid {
+    grid-template-columns: repeat(1, 100%);
+    grid-row-gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .carbook-header h1 {
+    font-size: 2.8rem;
+  }
+  .CarBooking .car-features {
+    grid-template-columns: repeat(2, calc(50% - 10px));
+    grid-gap: 20px;
+  }
+  .car-text h1 {
+    font-size: 1.7rem;
+  }
+  .CarBooking .car-text .price {
+    font-size: 1.18rem;
+  }
+  .Booking-payment h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .carbook-header h1 {
+    font-size: 2.5rem;
+  }
+  .Booking-payment h1 {
+    font-size: 1.7rem;
+  }
+}

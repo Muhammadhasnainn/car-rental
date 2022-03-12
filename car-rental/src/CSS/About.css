@@ -1,0 +1,73 @@
+.About-content {
+  width: 55%;
+}
+
+.about-heading {
+  color: red;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.About-content h1 {
+  font-weight: bold;
+}
+
+.Check-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.check-icon i {
+  color: white;
+  font-size: 1rem;
+}
+
+.About-img {
+  width: 40%;
+}
+
+.About-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .About-section {
+    flex-direction: column;
+  }
+  .About-content {
+    width: 100%;
+  }
+
+  .About-img {
+    width: 75%;
+  }
+}
+
+@media(max-width: 750px){
+  .Check-box {
+    grid-template-columns: repeat(1, 100%);
+}
+}
+
+@media(max-width: 550px){
+  .about-heading {
+    font-size: 1.3rem;
+}
+  .About-content h1 {
+    font-size: 1.5rem;
+  }
+}

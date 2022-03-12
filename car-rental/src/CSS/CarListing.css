@@ -1,0 +1,155 @@
+.carlist-header {
+  width: 100%;
+  background: url("http://gauto-react.themescare.com/static/media/breadcromb.6f2331c2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 1000px rgba(0, 0, 0, 0.8);
+}
+
+.carlist-header h1 {
+  font-weight: bold;
+  font-size: 3.3rem;
+  color: white;
+}
+
+.CarListing-section .book-box {
+  width: 32%;
+  background: rgb(245, 245, 245);
+  height: 380px !important;
+}
+
+.CarListing-section .Search-box {
+  padding: 10px 0px;
+}
+
+.CarListing-section .Search-img {
+  display: none !important;
+}
+
+.CarListing-section .Details {
+  width: 100%;
+  padding: 0px;
+}
+
+.CarListing-section .From,
+.CarListing-section .To,
+.CarListing-section .journey-date,
+.CarListing-section .journey-time,
+.CarListing-section .submit,
+.CarListing-section .type {
+  width: 90% !important;
+  margin-bottom: 10px;
+}
+
+.CarListing-section .From input,
+.CarListing-section .To input,
+.CarListing-section .journey-date input,
+.CarListing-section .journey-time input,
+.CarListing-section .submit input,
+.CarListing-section .type-input {
+  outline: none;
+  border: 2px solid white;
+  width: 100%;
+  margin: 0px;
+}
+
+.CarListing-section .submit input {
+  border: 2px solid red;
+}
+
+.CarListing-section .Details .w-100 {
+  flex-direction: column;
+}
+
+.CarListing-section .Details .w-100:last-child {
+  margin-top: 0% !important;
+}
+
+.Car-cards {
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 15px));
+  width: 65%;
+  grid-gap: 30px;
+}
+
+@media (min-width: 1650px) {
+  .book-box {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1204px) {
+  .CarListing-section .book-box {
+    width: 28%;
+  }
+  .Car-cards {
+    width: 70%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, calc(50% - 10px));
+  }
+}
+
+@media (max-width: 1103px) {
+  .offer-card {
+    padding: 15px 15px 30px 15px !important;
+  }
+  .offer-btns {
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 999px) {
+  .Car-List {
+    flex-direction: column;
+  }
+  .CarListing-section .book-box {
+    width: 100%;
+  }
+  .Car-cards {
+    width: 100%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, calc(50% - 10px));
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .Car-cards {
+    width: 100%;
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .CarListing-section .offer-img {
+    width: 60%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .carlist-header h1 {
+    font-size: 2.7rem;
+}
+  .offer-description {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .CarListing-section .offer-img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .carlist-header h1 {
+    font-size: 2.3rem;
+}
+  .CarListing-section .offer-img {
+    width: 75%;
+  }
+}

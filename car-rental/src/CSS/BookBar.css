@@ -1,0 +1,176 @@
+.Search-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0px 10px;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 100%;
+  width: 29%;
+  box-shadow: inset 0 0 0 1500px rgba(255, 0, 0, 0.7);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.Search-img h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Details {
+  width: 70%;
+  padding: 0px 10px;
+}
+
+.From,
+.To,
+.journey-date,
+.journey-time,
+.submit,
+.type {
+  width: 33.333333333333336%;
+}
+
+.From input,
+.To input,
+.journey-date input,
+.journey-time input,
+.submit input {
+  outline: none;
+  border: 2px solid rgb(231, 228, 228);
+  padding: 10px 20px;
+  width: 93%;
+  border-radius: 3px;
+  background: white;
+}
+
+.submit input {
+  background: transparent;
+  outline: none;
+  border: 2px solid red;
+  font-size: 1.1rem;
+  transition: 0.3s all ease;
+  background: white;
+}
+
+.submit input:hover {
+  background: red;
+  color: white;
+}
+
+.From input:focus,
+.To input:focus,
+.journey-date input:focus,
+.journey-time input:focus,
+.submit input:focus {
+  border: 2px solid red;
+  background: white;
+}
+
+.type {
+  position: relative;
+}
+
+.type-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 2px solid rgb(231, 228, 228);
+  padding: 10px 20px;
+  background: white;
+}
+
+.type-input:hover {
+  border: 2px solid red;
+}
+
+.type input {
+  width: 95%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background: transparent;
+  /* pointer-events: none; */
+  cursor: pointer;
+}
+
+.type i {
+  width: 5%;
+  font-size: 1.4rem;
+}
+
+.type-dropdown {
+  position: absolute;
+  width: 100%;
+  padding: 10px 20px;
+  background: white;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1);
+  z-index: 200;
+  border-radius: 3px;
+}
+
+.type-dropdown p {
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.journey-date .react-calendar {
+  z-index: 200;
+  position: absolute;
+  padding: 20px;
+  border: none !important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 3px rgba(151, 148, 148, 0.2);
+}
+
+.react-calendar__navigation__arrow:first-child,
+.react-calendar__navigation__arrow:last-child {
+  display: none !important;
+}
+
+.react-calendar__navigation__label {
+  background: white !important;
+  font-size: 1.1rem;
+}
+
+.react-calendar__navigation {
+  margin-bottom: 10px !important;
+}
+
+.react-calendar__navigation__arrow {
+  font-size: 2.7rem !important;
+}
+
+.react-calendar__navigation button:disabled {
+  display: none !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: black !important;
+}
+
+.react-calendar__month-view__weekdays abbr {
+  text-decoration: none !important;
+}
+
+.react-calendar__tile--active {
+  color: white !important;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #ffffff !important;
+  color: #e6e2e2 !important;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.react-calendar button {
+  color: black;
+}
+

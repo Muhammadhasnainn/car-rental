@@ -1,0 +1,56 @@
+.Banner {
+  height: 350px;
+  background: rgba(0, 0, 0, 0.5)
+    url("https://images.pexels.com/photos/1253049/pexels-photo-1253049.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background-blend-mode: darken;
+  margin-top: 50px;
+}
+
+.banner-img {
+  width: 40%;
+}
+
+.banner-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-text {
+  color: white;
+  width: 50%;
+}
+
+.banner-text h1 {
+  font-weight: bold;
+}
+
+.banner-text button {
+  outline: none;
+  border: 2px solid red;
+  background: transparent;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 3px;
+  box-shadow: inset 0px 0px 1500px rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+  transition: 0.2s all ease;
+}
+
+.banner-text button:hover {
+  background: red;
+  box-shadow: none;
+}
+
+@media (max-width: 900px) {
+  .banner-img {
+    display: none;
+  }
+  .banner-text {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "img": "https://freepngimg.com/thumb/car/3-2-car-free-download-png.png",
+        "name": "Toyoto Alphard",
+        "price": "$50",
+        "model": "Model:2017",
+        "speed": "20kmpl",
+        "type": "automatic",
+        "text": "consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel,dapibus tempus nulla. Donec vel nulla dui."
+    },
+    {
+        "id": 2,
+        "img": "https://freepngimg.com/thumb/audi/16-white-audi-png-car-image.png",
+        "name": "Toyoto Alphard",
+        "price": "$50",
+        "model": "Model:2017",
+        "speed": "20kmpl",
+        "type": "automatic",
+        "text": "consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel,dapibus tempus nulla. Donec vel nulla dui."
+    },
+    {
+        "id": 3,
+        "img": "https://freepngimg.com/thumb/car/3-2-car-free-download-png.png",
+        "name": "Toyoto Alphard",
+        "price": "$50",
+        "model": "Model:2017",
+        "speed": "20kmpl",
+        "type": "automatic",
+        "text": "consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel,dapibus tempus nulla. Donec vel nulla dui."
+    },
+    {
+        "id": 4,
+        "img": "https://freepngimg.com/thumb/audi/16-white-audi-png-car-image.png",
+        "name": "Toyoto Alphard",
+        "price": "$50",
+        "model": "Model:2017",
+        "speed": "20kmpl",
+        "type": "automatic",
+        "text": "consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel,dapibus tempus nulla. Donec vel nulla dui."
+    }
+]
